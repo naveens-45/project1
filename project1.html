@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/skilllab1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+    .cake-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-left: 100px;
+    }
+
+    body{
+      background-color: antiquewhite;
+      padding: 0;
+      margin: 0;
+    }
+    header{
+          
+            padding: 20px 40px;
+          
+        }
+
+  
+    
+ 
+</style>
+
+</head>
+
+
+
+<body>
+    <h1 style="text-align: center;">Cakes &amp;&amp; Bakes</h1>
+    <div class="header">
+      
+    </div>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to [cakes &amp;&amp; bakes], where every slice tells a story! 
+            <br>
+             We are passionate bakers dedicated to crafting delicious cakes that bring joy to every occasion.
+        </p>
+      </section>
+          <div class="bakes" style="grid-template-columns: repeat(auto-fit,minmax(100px,1fr));">
+          
+          <section id="cakes">
+            <h2>Cakes</h2>
+            <div class="cake-grid">
+              <div class="cake-card">
+                <img src="./project1_files/birth1.jpeg" alt="Birthday Cake">
+                <h3>Birthday Cake</h3>
+                <p>$25.00</p>
+                <button onclick="viewCakeDetails(1)">View Details</button>
+              </div>
+    
+              <div class="hello" style="padding-right: 200px; padding-bottom: 200px;">
+                <section id="cake-details" style="width: 200px;">
+                    <h2>spacial Cake</h2>
+                    <div class="oip" style="width: 200px;">
+                      <img src="./project1_files/OIP23.jpeg" alt="Selected Cake">
+                    </div>
+                   
+                    <p>Delicious birthday cake with customizable options.</p>
+                    <label for="flavor">Choose a flavor:</label>
+                    <select id="flavor">
+                      <option>Chocolate</option>
+                      <option>Vanilla</option>
+                    </select>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                  </section>
+              </div>
+
+
+
+          </div>
+
+        </section>
+        
+        
+
+
+      
+      <div class="bakes" style="grid-template-columns: repeat(auto-fit,minmax(200px,1fr));">
+      
+      <section id="cakes">
+        <h2>wedding cakes</h2>
+        <div class="cake-grid">
+          <div class="cake-card" style="width: 100px;">
+            <img src="./project1_files/OIP.jpeg" alt="Birthday Cake">
+            <h3 style="width: auto;">wedding cakes</h3>
+            <p>$25.00</p>
+            <button onclick="viewCakeDetails(1)">View Details</button>
+          </div>
+
+
+          <section id="gallery" style="padding-bottom: 150px;">
+            <h2>Gallery</h2>
+    <div class="gallery-grid" style="padding-bottom: 100px;">
+      <img src="./project1_files/cake1.jpeg" alt="Cake 1" style="height: 220px; padding-bottom: 100px;">
+      <img src="./project1_files/cake2.jpeg" alt="Cake 2" style="padding-bottom: 100px;">
+      <label for="flavor"></label>
+                    <select id="flavor" style="padding-right: 200px;">
+                      <option>pineapple</option>
+                      <option>Chocolate</option>
+                      <option>strawberry</option>
+                      <option>Vanilla</option>
+                    </select>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                  </div></section>
+                  
+      
+    </div>
+
+          </section>
+              
+            
+
+    
+        
+        <section id="testimonials" style="text-align: center; padding-bottom: 80px;">
+          <h2>Customer Reviews</h2>
+          <div class="testimonial">
+            <p>"The best cake I've ever had!" - John</p>
+            <p>"Classic and versatile, a good vanilla bean cake is light and fluffy" - raj</p>
+          </div>
+        
+        </section>  
+
+        <hr>
+
+
+        <div class="">
+          <footer>
+              
+              <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></li>
+
+                <li><a href="http://127.0.0.1:5500/cart.html">Cart</a></li>
+              </ul>
+
+              <hr>
+
+
+              <div style="text-align: center;">
+                <p>Contact Us: 123-456-7890</p>
+              <p>Follow us on:
+                <a href="http://127.0.0.1:5500/skilllab1.html#">Instagram</a> | 
+                <a href="http://127.0.0.1:5500/skilllab1.html#">Facebook</a>
+              </p>
+              </div>
+            </footer>
+
+
+           
+            
+      
+        </div>
+
+        
+
+
+
+
+
+          
+
+         
+
+          
+         
+
+
+          
+
+          <br>
+        
+
+        
+    
+          
+        </div>
+      
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></body></html>
